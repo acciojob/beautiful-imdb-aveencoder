@@ -1,16 +1,77 @@
 <!DOCTYPE html>
-
-<html>
-
+<html lang="en">
 <head>
-	<link rel="stylesheet" href="styles.css">
-</head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IMDb Movie Detail</title>
+    <!-- <link rel="stylesheet" href="styles.css"> -->
+     <style>
+ /* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
+body {
+    background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #fff;
+    /* height: 100vh;  */
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+}
+
+/* Container for layout */
+.movieContainer {
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    max-width: 800px;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.5);
+}
+
+/* Movie poster styling */
+.moviePic {
+    height: 450px;
+    width: 300px;
+    opacity: 0.95;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.moviePic:hover {
+    transform: scale(1.05);
+}
+
+/* Movie description styling */
+.movieDetail {
+    position: relative;
+    top: 20px;
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 1.2rem;
+    line-height: 1.6;
+    padding-top: 20px;
+}
+
+     </style>
+</head>
 <body>
-	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
-</script>
+
+    <div class="movieContainer">
+        <img class="moviePic" src="https://tse4.mm.bing.net/th/id/OIP.vJhSBX53_0RJw31mwdhqfQHaNK?cb=iwc2&rs=1&pid=ImgDetMain" alt="Movie Poster">
+        <p class="movieDetail">
+            In a world where technology and humanity collide, one hero rises to restore balance and peace. <br>
+            "Rise of the Synths" is a thrilling sci-fi adventure set in a dystopian future where artificial intelligence has taken control.
+            With stunning visuals and a powerful story, this movie redefines what it means to be human.
+        </p>
+    </div>
 
 </body>
-
 </html>
